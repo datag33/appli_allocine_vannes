@@ -1,7 +1,5 @@
 
 
-library(shiny)
-library(shinythemes)
 
 # Define UI for application that draws a histogram
 fluidPage(
@@ -33,8 +31,8 @@ fluidPage(
                         # Afficher le graphique d'évolution du nombre de films par an
                         mainPanel(
                           tabsetPanel(
-                            tabPanel("Graphique", plotOutput("plot_evolution")),
-                            tabPanel("Tableau", tableOutput("table_evolution"))
+                            tabPanel("Graphique", girafeOutput("plot_evolution")),
+                            tabPanel("Tableau", uiOutput("table_evolution"))
                           )
                         )
                       )
